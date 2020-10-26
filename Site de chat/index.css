@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
+#Rose {
+    background-color: #fff8d2;
+}
+header {
+    background-color: #F4F1E0;
+}
+.btn {
+    padding: 0px;
+    margin: 1px;
+    background-color: #333333;
+}
+.btn a{
+    cursor: pointer;
+    padding: 2px 18px;
+    text-decoration: none;
+    color: #fff;
+}
+#title-gallery {
+    font-family: 'Ranchers', cursive;
+    color: black;
+}
+.navbar-brand {
+    font-family: 'Ranchers', cursive;
+}
+#police-header {
+    font-family: 'Ranchers', cursive;
+    font-size: 130%;
+}
+.jumbotron {
+    display: flex;
+    align-items: center;
+    background-image: url('./assets/cat_face-Photo_hd_Wallpaper_2560x1600.jpg');
+    background-size: cover;
+    height: 550px;
+}
+.jumbotron h1 {
+    opacity: 0.5;
+    transition: 0.3s;
+}
+.jumbotron:hover h1 {
+    opacity: 1;
+    font-size: 300%;
+}
+#midle {
+    font-family: 'Ranchers', cursive;
+    color: white;
+}
+#img-home .row img{
+    margin: 0 0 30px;
+    width: 100%;
+}
+iframe.alignCenter {
+    display: block;
+    margin: 0 auto;
+    width: 500px;
+}
+.container.gallery-container {
+    background-color: #fff;
+    color: #35373a;
+    min-height: 100vh;
+    padding: 30px 50px;
+}
+.gallery-container h1 {
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: bold;
+}
+.gallery-container p.page-description {
+    text-align: center;
+    margin: 25px auto;
+    font-size: 18px;
+    color: #999;
+}
+.tz-gallery {
+    padding: 40px;
+}
+.tz-gallery .row > div {
+    padding: 2px;
+}
+.tz-gallery .lightbox img {
+    width: 100%;
+    border-radius: 0;
+    position: relative;
+}
+.tz-gallery .lightbox:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -13px;
+    margin-left: -13px;
+    opacity: 0;
+    color: #fff;
+    font-size: 26px;
+    font-family: 'Glyphicons Halflings';
+    content: '+';
+    pointer-events: none;
+    z-index: 9000;
+    transition: 0.4s;
+}
+.page-description {
+    border: 1px solid #000;
+    text-align: center;
+    padding: 30px;
+}
+.tz-gallery .lightbox:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: #ffedd293;
+    content: '';
+    transition: 0.4s;
+}
+.tz-gallery .lightbox:hover:after,
+.tz-gallery .lightbox:hover:before {
+    opacity: 1;
+}
+.baguetteBox-button {
+    background-color: transparent !important;
+}
+@media(max-width: 768px) {
+    body {
+        padding: 0;
+    }
+}
